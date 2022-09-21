@@ -20,16 +20,16 @@ data "ec_stack" "latest" {
 
 
 resource "ec_deployment_elasticsearch_keystore" "aws_access_key" {
-  deployment_id = "8567e69227bd45d1b03a9c27eda07979"
+  deployment_id = "YOUR-DEPLOYMENT-ID"
   setting_name  = "s3.client.secondary.access_key"
-  value         = "xxxxx"
+  value         = "YOUR-AWS-ACCESS-KEY"
   as_file       = false
 }
 
 
 resource "ec_deployment_elasticsearch_keystore" "aws_secret_key" {
-  deployment_id = "8567e69227bd45d1b03a9c27eda07979"
+  deployment_id = "YOUR-DEPLOYMENT-ID"
   setting_name  = "s3.client.secondary.secret_key"
-  value         = "xxxx"
+  value         = "YOUR-AWS-SECRET-KEY"
   as_file       = false
 }
